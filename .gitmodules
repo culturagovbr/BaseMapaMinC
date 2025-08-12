@@ -1,0 +1,18 @@
+[submodule "plugins/MultipleLocalAuth"]
+	path = plugins/MultipleLocalAuth
+	url = https://github.com/culturagovbr/plugin-MultipleLocalAuth.git
+[submodule "plugins/AdminLoginAsUser"]
+	path = plugins/AdminLoginAsUser
+	url = https://github.com/culturagovbr/plugin-AdminLoginAsUser.git
+[submodule "plugins/SpamDetector"]
+	path = plugins/SpamDetector
+	url = https://github.com/culturagovbr/plugin-SpamDetector.git
+[submodule "plugins/RecreatePCacheOnLogin"]
+	path = plugins/RecreatePCacheOnLogin
+	url = https://github.com/culturagovbr/plugin-RecreatePCacheOnLogin.git
+[submodule "plugins/Metabase"]
+	path = plugins/Metabase
+	url = https://github.com/culturagovbr/plugin-Metabase.git
+[submodule "plugins/MapasBlame"]
+	path = plugins/MapasBlame
+	url = https://github.com/culturagovbr/plugin-MapasBlame.git

@@ -19,10 +19,14 @@ services:
       - ../docker/common/config.d:/var/www/config/common.d
       - ./config.d:/var/www/config/local.d
 
-      # themes and plugins
-      - ../plugins/SamplePlugin:/var/www/src/plugins/SamplePlugin
+      # Plugins
       - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
+      - ../plugins/AdminLoginAsUser:/var/www/src/plugins/AdminLoginAsUser
       - ../plugins/SpamDetector:/var/www/src/plugins/SpamDetector
+      - ../plugins/RecreatePCacheOnLogin:/var/www/src/plugins/RecreatePCacheOnLogin
+      - ../plugins/Metabase:/var/www/src/plugins/Metabase
+      - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
+    
 
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
