@@ -26,11 +26,13 @@ services:
       - ../plugins/RecreatePCacheOnLogin:/var/www/src/plugins/RecreatePCacheOnLogin
       - ../plugins/Metabase:/var/www/src/plugins/Metabase
       - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
-    
+
       # Themes
       - ../themes/MapaMinC:/var/www/src/themes/MapaMinC
       - ../themes/Funarte:/var/www/src/themes/Funarte
     
+    env_file:
+      - .env
 
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
