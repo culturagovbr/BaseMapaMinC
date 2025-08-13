@@ -16,3 +16,9 @@
 [submodule "plugins/MapasBlame"]
 	path = plugins/MapasBlame
 	url = https://github.com/culturagovbr/plugin-MapasBlame.git
+[submodule "themes/MapaMinC"]
+	path = themes/MapaMinC
+	url = https://github.com/culturagovbr/theme-MapaMinC.git
+[submodule "themes/Funarte"]
+	path = themes/Funarte
+	url = https://github.com/culturagovbr/theme-Funarte.git

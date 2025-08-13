@@ -27,6 +27,10 @@ services:
       - ../plugins/Metabase:/var/www/src/plugins/Metabase
       - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
     
+      # Themes
+      - ../themes/MapaMinC:/var/www/src/themes/MapaMinC
+      - ../themes/Funarte:/var/www/src/themes/Funarte
+    
 
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
