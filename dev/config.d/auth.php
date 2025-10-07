@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'auth.provider' => 'Fake',
+    // 'auth.provider' => 'Fake',
     // 'auth.provider' => '\MultipleLocalAuth\Provider',
     // 'auth.config' => [
     //     'salt' => env('AUTH_SALT', null),
