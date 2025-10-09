@@ -42,7 +42,7 @@ services:
 
       - ./docker/production/config.d:/var/www/config/prod.d
     links:
-      - db
+#      - db
       - redis
       - sessions
     environment:
@@ -50,7 +50,7 @@ services:
       - SESSIONS_SAVE_PATH=tcp://sessions:6379
 
     depends_on:
-      - db
+#      - db
       - redis
       - sessions
 
@@ -66,18 +66,19 @@ services:
     volumes:
       - ./docker-data/sessions:/data
 
-  db:
-    image: postgis/postgis:16-master
-    restart: unless-stopped
-    environment:
-      - POSTGRES_PASSWORD=mapas
-      - POSTGRES_USER=mapas
-      - POSTGRES_DB=mapas
-    volumes:
-      - ./docker/db:/docker-entrypoint-initdb.d
-      - ./docker-data/db-data:/var/lib/postgresql/data
+## Em ambiente de Produção não é aconselhável subir banco de dados no container
+## O ideal é subir separado e apenas configurar a conexão no .env
+#  db:
+#    image: postgis/postgis:16-master
+#    restart: unless-stopped
+#    environment:
+#      - POSTGRES_PASSWORD=mapas
+#      - POSTGRES_USER=mapas
+#      - POSTGRES_DB=mapas
+#    volumes:
+#      - ./docker/db:/docker-entrypoint-initdb.d
+#      - ./docker-data/db-data:/var/lib/postgresql/data
     
-
 ## Em ambiente de homologação pode ser uma boa ideia utilizar o mailhog para testar 
 ## o envio de emails e também prevenir que emails de tete sejam disparados acidentalmente 
 ## para os usuários no caso de o ambiente de homologação utilizar um banco de dados cópia
