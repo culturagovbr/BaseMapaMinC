@@ -41,6 +41,20 @@ services:
       - ./docker-data/logs:/var/www/var/logs
 
       - ./docker/production/config.d:/var/www/config/prod.d
+
+      # Plugins
+      - ./plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
+      - ./plugins/AdminLoginAsUser:/var/www/src/plugins/AdminLoginAsUser
+      - ./plugins/SpamDetector:/var/www/src/plugins/SpamDetector
+      - ./plugins/RecreatePCacheOnLogin:/var/www/src/plugins/RecreatePCacheOnLogin
+      - ./plugins/Metabase:/var/www/src/plugins/Metabase
+      - ./plugins/MapasBlame:/var/www/src/plugins/MapasBlame
+
+      # Themes
+      - ./themes/BaseTheme:/var/www/src/themes/BaseTheme
+      - ./themes/MapaMinC:/var/www/src/themes/MapaMinC
+      - ./themes/Funarte:/var/www/src/themes/Funarte
+
     links:
 #      - db
       - redis
