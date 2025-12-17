@@ -54,6 +54,7 @@ services:
       - ./themes/BaseTheme:/var/www/src/themes/BaseTheme
       - ./themes/MapaMinC:/var/www/src/themes/MapaMinC
       - ./themes/Funarte:/var/www/src/themes/Funarte
+      - ./themes/Pnab:/var/www/src/themes/Pnab
 
     links:
 #      - db
