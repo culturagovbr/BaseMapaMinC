@@ -26,6 +26,7 @@ services:
       - ../plugins/RecreatePCacheOnLogin:/var/www/src/plugins/RecreatePCacheOnLogin
       - ../plugins/Metabase:/var/www/src/plugins/Metabase
       - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
+      - ../plugins/AldirBlanc:/var/www/src/plugins/AldirBlanc
 
       # Themes
       - ../themes/BaseTheme:/var/www/src/themes/BaseTheme
