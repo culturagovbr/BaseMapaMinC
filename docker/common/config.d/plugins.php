@@ -19,6 +19,7 @@ return [
                         'MapaMinC\Theme' => env('METABASE_ENABLED', false),
                         'Funarte\Theme' => env('METABASE_FUNARTE_ENABLED', false),
                         'CulturaViva\Theme' => env('METABASE_CULTURAVIVA_ENABLED', false),
+                        'Pnab\Theme' => env('METABASE_PNAB_ENABLED', false),
                     ], fn($enabled) => $enabled));
 
                     // Verifica se o tema atual está na lista de temas habilitados
