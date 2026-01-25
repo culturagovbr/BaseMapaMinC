@@ -33,6 +33,7 @@ services:
       - ../themes/MapaMinC:/var/www/src/themes/MapaMinC
       - ../themes/Funarte:/var/www/src/themes/Funarte
       - ../themes/Pnab:/var/www/src/themes/Pnab
+      - ../themes/CulturaViva:/var/www/src/themes/CulturaViva
     
     env_file:
       - .env

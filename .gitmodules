@@ -28,3 +28,6 @@
 [submodule "plugins/AldirBlanc"]
 	path = plugins/AldirBlanc
 	url = https://github.com/culturagovbr/plugin-AldirBlanc.git
+[submodule "themes/CulturaViva"]
+	path = themes/CulturaViva
+	url = https://github.com/culturagovbr/theme-CulturaViva.git
