@@ -31,3 +31,6 @@
 [submodule "themes/CulturaViva"]
 	path = themes/CulturaViva
 	url = https://github.com/culturagovbr/theme-CulturaViva.git
+[submodule "plugins/RCV"]
+	path = plugins/RCV
+	url = https://github.com/culturagovbr/plugin-RCV.git
