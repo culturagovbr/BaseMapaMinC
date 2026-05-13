@@ -34,3 +34,6 @@
 [submodule "plugins/RCV"]
 	path = plugins/RCV
 	url = https://github.com/culturagovbr/plugin-RCV.git
+[submodule "plugins/ValuersManagement"]
+	path = plugins/ValuersManagement
+	url = https://github.com/mapasculturais/plugin-ValuersManagement.git
