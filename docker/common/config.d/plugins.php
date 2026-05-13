@@ -2,6 +2,7 @@
 
 return [
     'plugins' => [
+        'LoginWizard',
         'MultipleLocalAuth',
         'AdminLoginAsUser',
         'RecreatePCacheOnLogin',
@@ -9,6 +10,8 @@ return [
         'MapasBlame',
         'AldirBlanc',
         'RCV',
+        'Lgpd',
+        'ValuersManagement',
         'Metabase' => [
             'namespace' => 'Metabase',
             'config' => [
