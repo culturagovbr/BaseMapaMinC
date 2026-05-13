@@ -6,7 +6,7 @@
 	url = https://github.com/culturagovbr/plugin-AdminLoginAsUser.git
 [submodule "plugins/SpamDetector"]
 	path = plugins/SpamDetector
-	url = https://github.com/culturagovbr/plugin-SpamDetector.git
+	url = https://github.com/mapasculturais/plugin-SpamDetector.git
 [submodule "plugins/RecreatePCacheOnLogin"]
 	path = plugins/RecreatePCacheOnLogin
 	url = https://github.com/culturagovbr/plugin-RecreatePCacheOnLogin.git
