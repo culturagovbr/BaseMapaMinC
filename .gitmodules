@@ -40,3 +40,6 @@
 [submodule "plugins/LoginWizard"]
 	path = plugins/LoginWizard
 	url = https://github.com/culturagovbr/plugin-LoginWizard.git
+[submodule "plugins/Lgpd"]
+	path = plugins/Lgpd
+	url = https://github.com/culturagovbr/plugin-Lgpd.git
