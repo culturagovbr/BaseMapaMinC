@@ -9,7 +9,7 @@
 	url = https://github.com/mapasculturais/plugin-SpamDetector.git
 [submodule "plugins/RecreatePCacheOnLogin"]
 	path = plugins/RecreatePCacheOnLogin
-	url = https://github.com/culturagovbr/plugin-RecreatePCacheOnLogin.git
+	url = https://github.com/mapasculturais/plugin-RecreatePCacheOnLogin.git
 [submodule "plugins/Metabase"]
 	path = plugins/Metabase
 	url = https://github.com/culturagovbr/plugin-Metabase.git
