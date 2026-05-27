@@ -43,3 +43,6 @@
 [submodule "plugins/Lgpd"]
 	path = plugins/Lgpd
 	url = https://github.com/culturagovbr/plugin-Lgpd.git
+[submodule "plugins/SNIICDataStandard"]
+	path = plugins/SNIICDataStandard
+	url = https://github.com/culturagovbr/plugin-SNIICDataStandard.git

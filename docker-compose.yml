@@ -51,6 +51,8 @@ services:
       - ./plugins/MapasBlame:/var/www/src/plugins/MapasBlame
       - ./plugins/AldirBlanc:/var/www/src/plugins/AldirBlanc
 
+      - ./plugins/SNIICDataStandard:/var/www/src/plugins/SNIICDataStandard
+      
       # Themes
       - ./themes/BaseTheme:/var/www/src/themes/BaseTheme
       - ./themes/MapaMinC:/var/www/src/themes/MapaMinC

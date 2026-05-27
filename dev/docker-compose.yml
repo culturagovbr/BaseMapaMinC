@@ -27,6 +27,7 @@ services:
       - ../plugins/Metabase:/var/www/src/plugins/Metabase
       - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
       - ../plugins/AldirBlanc:/var/www/src/plugins/AldirBlanc
+      - ../plugins/SNIICDataStandard:/var/www/src/plugins/SNIICDataStandard
 
       # Themes
       - ../themes/BaseTheme:/var/www/src/themes/BaseTheme
@@ -44,35 +45,39 @@ services:
       - REDIS_CACHE=redis
       - APP_MODE=development
       - BUILD_ASSETS=1
-      - MAILER_TRANSPORT=smtp://mailhog:1025
-      - MAILER_FROM=sysadmin@localhost
 
-    depends_on:
-      - db
-      - redis
-      - mailhog
+    # depends_on:
+      # - db
+      # - redis
+      # - mailhog
   
     stdin_open: true
     tty: true
+    networks:
+      - external_net
 
 
-  redis:
-    image: redis:6
-    command: --maxmemory 256Mb --maxmemory-policy allkeys-lru
+  # redis:
+  #   image: redis:6
+  #   command: --maxmemory 256Mb --maxmemory-policy allkeys-lru
 
-  db:
-    image: postgis/postgis:14-master
-    environment:
-      - POSTGRES_PASSWORD=mapas
-      - POSTGRES_USER=mapas
-      - POSTGRES_DB=mapas
-    ports:
-      - "5432:5432"
-    volumes:
-      - ../docker/db:/docker-entrypoint-initdb.d
-      - ./docker-data/db-data:/var/lib/postgresql/data
+  # db:
+  #   image: postgis/postgis:14-master
+  #   environment:
+  #     - POSTGRES_PASSWORD=mapas
+  #     - POSTGRES_USER=mapas
+  #     - POSTGRES_DB=mapas
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - ../docker/db:/docker-entrypoint-initdb.d
+  #     - ./docker-data/db-data:/var/lib/postgresql/data
 
-  mailhog: 
-    image: mailhog/mailhog
-    ports:
-      - "8025:8025"
+  # mailhog: 
+  #   image: mailhog/mailhog
+  #   ports:
+  #     - "8025:8025"
+
+networks:
+  external_net:
+    external: true
