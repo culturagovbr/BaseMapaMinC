@@ -12,6 +12,7 @@ return [
         'RCV',
         'Lgpd',
         'ValuersManagement',
+        'SNIICDataStandard',
         'Metabase' => [
             'namespace' => 'Metabase',
             'config' => [
