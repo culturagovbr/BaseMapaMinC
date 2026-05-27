@@ -50,7 +50,10 @@ services:
       - ./plugins/Metabase:/var/www/src/plugins/Metabase
       - ./plugins/MapasBlame:/var/www/src/plugins/MapasBlame
       - ./plugins/AldirBlanc:/var/www/src/plugins/AldirBlanc
-
+      - ./plugins/RCV:/var/www/src/plugins/RCV
+      - ./plugins/ValuersManagement:/var/www/src/plugins/ValuersManagement
+      - ./plugins/Lgpd:/var/www/src/plugins/Lgpd
+      - ./plugins/LoginWizard:/var/www/src/plugins/LoginWizard
       - ./plugins/SNIICDataStandard:/var/www/src/plugins/SNIICDataStandard
       
       # Themes
