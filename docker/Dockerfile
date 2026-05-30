@@ -1,4 +1,4 @@
-FROM culturagov/mapasculturais-minc:latest
+FROM culturagov/mapasculturais-minc:master
 
 COPY themes /var/www/src/themes
 COPY plugins /var/www/src/plugins
