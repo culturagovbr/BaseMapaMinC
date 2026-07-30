@@ -13,6 +13,7 @@ return [
         'Lgpd',
         'ValuersManagement',
         'SNIICDataStandard',
+        'Security',
         'Metabase' => [
             'namespace' => 'Metabase',
             'config' => [
