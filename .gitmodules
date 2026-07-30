@@ -46,3 +46,6 @@
 [submodule "plugins/SNIICDataStandard"]
 	path = plugins/SNIICDataStandard
 	url = https://github.com/culturagovbr/plugin-SNIICDataStandard.git
+[submodule "plugins/Security"]
+	path = plugins/Security
+	url = https://github.com/culturagovbr/plugin-security.git
