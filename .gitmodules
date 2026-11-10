@@ -49,3 +49,6 @@
 [submodule "plugins/Security"]
 	path = plugins/Security
 	url = https://github.com/culturagovbr/plugin-security.git
+[submodule "plugins/GovBrSatisfaction"]
+	path = plugins/GovBrSatisfaction
+	url = https://github.com/culturagovbr/plugin-GovBrSatisfaction.git

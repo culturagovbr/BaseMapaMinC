@@ -14,6 +14,7 @@ return [
         'ValuersManagement',
         'SNIICDataStandard',
         'Security',
+        'GovBrSatisfaction',
         'Metabase' => [
             'namespace' => 'Metabase',
             'config' => [
